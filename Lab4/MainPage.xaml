@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Lab4 ="clr-namespace:Lab4"
+             x:Class="Lab4.MainPage">
+    <ContentPage.BindingContext>
+        <Lab4:ViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <StackLayout Background="#F6CEA4">
+        <Frame BackgroundColor="#D28432" Padding="24" CornerRadius="0">
+            <Label Text="Список покупок" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="2.8*"/>
+                <ColumnDefinition Width="0.7*"/>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.3*"/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Entry WidthRequest="400" Text="{Binding TextLine}" Placeholder="Наименование продукта" Grid.Column="1" Grid.Row="0" FontSize="Small" VerticalOptions="Center"/>
+            <Entry WidthRequest="50" Text="{Binding InputNum}" Placeholder="шт" Grid.Column="2" Grid.Row="0" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button BackgroundColor="{Binding ChangeCl, Mode=OneWay}" Command="{Binding Mycommand}" Grid.Column="3" Grid.Row="0" CornerRadius="20"/>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1">
+                <Button x:Name="Orange"
+                        BackgroundColor="Orange" WidthRequest="30" HeightRequest="30"
+                        Command="{Binding ChangeColour}" 
+                        CommandParameter="{Binding Source={Reference Orange}, Path=BackgroundColor}"/>
+                <Button x:Name="Green" 
+                        BackgroundColor="Green" WidthRequest="30" 
+                        Command="{Binding ChangeColour}" 
+                        CommandParameter="{Binding Source={Reference Green}, Path=BackgroundColor}"/>
+                <Button x:Name="Blue"
+                        BackgroundColor="Blue" WidthRequest="30"
+                        Command="{Binding ChangeColour}" 
+                        CommandParameter="{Binding Source={Reference Blue}, Path=BackgroundColor}"/>
+                <Button x:Name="Red"
+                        BackgroundColor="Red" WidthRequest="30"
+                        Command="{Binding ChangeColour}" 
+                        CommandParameter="{Binding Source={Reference Red}, Path=BackgroundColor}"/>
+                <Button x:Name="Sienna"
+                        BackgroundColor="Sienna" WidthRequest="30"
+                        Command="{Binding ChangeColour}" 
+                        CommandParameter="{Binding Source={Reference Sienna}, Path=BackgroundColor}"/>
+                <Button x:Name="Purple"
+                        BackgroundColor="Purple" WidthRequest="30"
+                        Command="{Binding ChangeColour}" 
+                        CommandParameter="{Binding Source={Reference Purple}, Path=BackgroundColor}"/>
+            </StackLayout>
+
+        </Grid>
+
+
+        <CollectionView ItemsSource="{Binding LIST}" >
+            <CollectionView.ItemTemplate >
+                <DataTemplate x:DataType="Lab4:Model">
+                    <StackLayout Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsCheck}" Color="{Binding Colour}" Margin="20,0,0,0" />
+                        <Label Text="{Binding Buying}" VerticalOptions="Center"/>
+                        <Label Text="{Binding Number}" VerticalOptions="Center"/>
+                        <Button BackgroundColor="#881013" Margin="70,10,0,10" Text="удалить" FontSize="Micro" TextColor="White" CornerRadius="10"
+                                CommandParameter="{Binding .}"
+                                Clicked="DeleteClick"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+
+    </StackLayout>
+
+</ContentPage>

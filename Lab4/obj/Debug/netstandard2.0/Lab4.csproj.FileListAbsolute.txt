@@ -1,0 +1,14 @@
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\bin\Debug\netstandard2.0\Lab4.deps.json
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\bin\Debug\netstandard2.0\Lab4.dll
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\bin\Debug\netstandard2.0\ref\Lab4.dll
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\bin\Debug\netstandard2.0\Lab4.pdb
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\Lab4.csprojAssemblyReference.cache
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\Lab4.AssemblyInfoInputs.cache
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\Lab4.AssemblyInfo.cs
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\Lab4.dll
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\ref\Lab4.dll
+C:\Users\rapun\source\repos\Lab4\Lab4\Lab4\obj\Debug\netstandard2.0\Lab4.pdb
